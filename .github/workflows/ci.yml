@@ -9,7 +9,7 @@ jobs:
         with:
           python-version: "3.11"
       - name: Install
-        run: pip install 'pyiceberg[pyarrow,sql-sqlite]>=0.9' pytest
+        run: pip install 'pyiceberg[pyarrow,sql-sqlite]>=0.9' pandas pytest
       - name: Test
         run: |
           pytest -q
